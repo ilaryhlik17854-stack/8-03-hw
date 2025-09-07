@@ -26,7 +26,10 @@
 ```
 apt install postgresql
 заходим на сайт https://www.zabbix.com/download и под нашу систему формируем набор команд
+```
 ![Установка Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Agent_download.png?raw=true)
+
+```
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_6.0+debian11_all.deb
 dpkg -i zabbix-release_latest_6.0+debian11_all.deb
 apt update
@@ -40,8 +43,6 @@ systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 Даллее через браузер настроиваем Zabbix http://"192.168.100.89"/zabbix
 ```
-
-
 ---
 
 ### Задание 2
