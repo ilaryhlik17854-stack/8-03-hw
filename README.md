@@ -27,7 +27,7 @@
 apt install postgresql
 заходим на сайт https://www.zabbix.com/download и под нашу систему формируем набор команд
 ```
-![Установка Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Agent_download.png?raw=true)
+![Установка Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Zabbix_download.png?raw=true)
 
 ```
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_6.0+debian11_all.deb
