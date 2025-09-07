@@ -26,7 +26,7 @@
 ```
 apt install postgresql
 заходим на сайт https://www.zabbix.com/download и под нашу систему формируем набор команд
-![Установка Zabbix](https://github.com/)
+![Установка Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Agent_download.png?raw=true)
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_6.0+debian11_all.deb
 dpkg -i zabbix-release_latest_6.0+debian11_all.deb
 apt update
@@ -35,7 +35,7 @@ sudo -u postgres createuser --pwprompt zabbix
 sudo -u postgres createdb -O zabbix zabbix
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 DBPassword=123345678
-![Пароль для базы Zabbix](https://github.com/)
+![Пароль для базы Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/DBPassword.png?raw=true)
 systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 Даллее через браузер настроиваем Zabbix http://"192.168.100.89"/zabbix
@@ -67,21 +67,20 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 1. Приложите в файл README.md скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
 Мы подключили два хоста с Zabbix Agent установленного на Debian 11 и 12
-![Hosts Zabbix](https://github.com/)
+![Hosts Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Zabbix_hosts.png?raw=true)
 
 2. Приложите в файл README.md скриншот лога zabbix agent, где видно, что он работает с сервером
 Hosts Debian11
-![Debian11 Log](https://github.com/)
+![Debian11 Log](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/debian11.png?raw=true)
 Hosts Debian11
-![Debian12 Log](https://github.com/)
-
+![Debian12 Log](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/debian12.png?raw=true)
 
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 
-![Lasted data Zabbix](https://github.com/)
+![Lasted data Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/LastedDate.png?raw=true)
 
 4. Приложите в файл README.md текст использованных команд в GitHub
-![agent download Zabbix](https://github.com/)
+![agent download Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Agent_download.png?raw=true)
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_6.0+debian11_all.deb
 dpkg -i zabbix-release_latest_6.0+debian11_all.deb
 apt update
@@ -102,7 +101,7 @@ systemctl enable zabbix-agent
 
 Не смог в опрошенных Templates найти параметр по опросу диска С:
 Прикрепляю те данные которые смог опрость
-![Windosw_Host_Zabbix](https://github.com/)
+![Windosw_Host_Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Windosw_Host.png?raw=true)
 
-![Windosw_Templates_Zabbix](https://github.com/)
+![Windosw_Templates_Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Windosw_Templates.png?raw=true)
 
