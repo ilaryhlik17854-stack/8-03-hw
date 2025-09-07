@@ -1,4 +1,4 @@
-# Система мониторинга Zabbix`" - `Рыхлик Илья`
+# "Система мониторинга "Zabbix" - "Рыхлик Илья"' 
 
 ---
 
@@ -20,7 +20,7 @@
 ### Решение 1
 
 скриншот авторизации в админке Zabbix
-![Авторизация Zabbix](https://raw.githubusercontent.com/ilaryhlik17854-stack/rukhlik-homework-8-03-hw/refs/heads/ilaryhlik17854-stack-patch-1/2025-09-07_23-07-02.png)
+![Авторизация Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/Zabbiz_auth.png?raw=true)
 
 `Приведите ответ в свободной форме........`
 
