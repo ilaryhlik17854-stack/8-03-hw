@@ -38,7 +38,9 @@ sudo -u postgres createuser --pwprompt zabbix
 sudo -u postgres createdb -O zabbix zabbix
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 DBPassword=123345678
+```
 ![Пароль для базы Zabbix](https://github.com/ilaryhlik17854-stack/8-03-hw/blob/main/img/DBPassword.png?raw=true)
+```
 systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 Даллее через браузер настроиваем Zabbix http://"192.168.100.89"/zabbix
